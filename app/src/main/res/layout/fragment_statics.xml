@@ -1,46 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".StaticsFragment">
 
-    <LinearLayout
-        android:id="@+id/linear_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_alignParentTop="true">
-
-        <Button
-            android:id="@+id/btn_income"
-            android:layout_width="0dp"
-            android:layout_height="47dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="Income" />
-
-        <Button
-            android:id="@+id/btn_expense"
-            android:layout_width="0dp"
-            android:layout_height="47dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:textColor="#F44336"
-            android:text="Expense" />
-    </LinearLayout>
-
-    <com.anychart.AnyChartView
-        android:id="@+id/any_chart_view"
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/linear_layout"/>
+        android:text="@string/hello_blank_fragment" />
 
-    <ProgressBar
-        android:id="@+id/progress_bar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:visibility="gone"/>
-
-</RelativeLayout>
-
+</FrameLayout>
